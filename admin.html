@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Kids<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu()">
+
+      </div>
+      <ul class="navigation">
+        <li><a href="admin.html" onclick="toggleMenu()" >Home </a></li>
+        <li><a href="login.html" onclick="toggleMenu()" >Login </a></li>
+        <li><a href="signup.html" onclick="toggleMenu()" >Sign Up </a></li>
+        <li><a href="cart.html" onclick="toggleMenu()" >Cart</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-cart-fill cart_icon" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg><span class="cart_counter">0</span>
+      </li>
+
+      </ul>
+    </header>
+
+
+
+    <section class="menu" id="menu">
+      <div class="Title">
+        <h2 class="titleText"><span>P</span>roducts</h2>
+     </div>
+      <div class="content">
+        <div class="box" id="card1" >
+          <div class="imgBx">
+            <img src="https://images.pexels.com/photos/42230/teddy-teddy-bear-association-ill-42230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+         
+         
+
+              <div class="image__overlay image__overlay--primary">
+                <div class="image__title">Teddy Bear</div>
+                <p class="image__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+                </p>
+                <b class="image__description">Rs</b>
+             
+                <p class="image__description1">
+                    <b>6000 Rs</b>
+                </p>
+              </div>
+
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="1" onclick="updateProd(id)">Edit</button>
+          </div>
+        </div>
+
+        <div class="box" id="card2" >
+          <div class="imgBx">
+            <img src="https://images.pexels.com/photos/191360/pexels-photo-191360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+            <div class="image__overlay image__overlay--primary">
+              <div class="image__title">Toy Set</div>
+              <p class="image__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+              </p>
+              <b class="image__description">Rs</b>
+             
+              <p class="image__description1">
+                  <b>5000 Rs</b>
+              </p>
+            </div>
+
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="2" onclick="updateProd(id)">Edit</button>
+          </div>
+        </div>
+
+        <div class="box" id="card3" >
+            <div class="imgBx">
+              <img src="https://images.pexels.com/photos/163696/toy-car-toy-box-mini-163696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+            <div class="image__overlay image__overlay--primary">
+              <div class="image__title">Car Set</div>
+              <p class="image__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+              </p>
+              <b class="image__description">Rs</b>
+             
+              <p class="image__description1">
+                 <b>20000 Rs</b>
+              </p>
+            </div>
+
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="3" onclick="updateProd(id)">Edit</button>
+
+          </div>
+        </div>
+
+        <div class="box" id="card4" >
+            <div class="imgBx">
+              <img src="https://i.ytimg.com/vi/yiMN1YHsLQo/maxresdefault.jpg" alt="">
+            
+            <div class="image__overlay image__overlay--primary">
+              <div class="image__title">Barbie Set </div>
+             
+              <p class="image__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+              </p>
+              <b class="image__description">Rs</b>
+             
+              <p class="image__description1">
+               <b>2000 Rs</b>
+              </p>
+            </div>
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="4" onclick="updateProd(id)">Edit</button>
+    </div>
+        </div>
+
+        <div class="box" id="card5" >
+            <div class="imgBx">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/8118dD1kFEL._AC_SL1500_.jpg" alt="">
+
+            <div class="image__overlay image__overlay--primary">
+              <div class="image__title">Bag</div>
+           
+              <p class="image__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+              </p>
+              <b class="image__description">Rs</b>
+             
+              <p class="image__description1">
+                  <b>3000 Rs</b>
+              </p>
+            </div>
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="5" onclick="updateProd(id)">Edit</button>
+
+          </div>
+        </div>
+
+        <div class="box" id="card6" >
+          <div class="imgBx">
+            <img src="https://i.pinimg.com/564x/f3/c8/b5/f3c8b546cebad98dd8bfb7ecd755b763.jpg" alt="">
+
+            <div class="image__overlay image__overlay--primary">
+              <div class="image__title">Lake House</div>
+          
+              <p class="image__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptatem.
+              </p>
+              <b class="image__description">Rs</b>
+              <p class="image__description1">
+                  <b>5000 </b>
+              </p>
+            </div>
+          </div>
+          <div class="text">
+            <button  class="btn_cart1 editcart" id="6" onclick="updateProd(id)">Edit</button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+  <div class="copyright">
+    <p>Copyright. All Rights Reserved</p>
+  </div>
+
+   <script type="text/javascript" src="js/ProdDisplay.js">
+
+  </script>
+  <script type="text/javascript" src="js/admin.js">
+
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky",window.scrollY>0);
+    })
+
+    function toggleMenu(){
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation  = document.querySelector('.navigation');
+      navigation.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    }
+
+
+
+
+
+    function cards_text_out(id) {
+      console.log("ki");
+    //  console.log( document.querySelector("#" + id).innerHTML);
+    console.log(document.querySelector("#" + id).innerHTML);
+
+
+    }
+  </script>
+  </body>
+</html>

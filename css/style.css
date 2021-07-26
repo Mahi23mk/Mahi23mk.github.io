@@ -1,0 +1,848 @@
+*{
+  font-family:'Poppins',sans-serif;
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+}
+
+
+p{
+  font-weight: 300;
+  color: #111;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;align-items: center;
+  justify-content: center;
+  background: url("https://images.pexels.com/photos/161709/newborn-baby-feet-basket-161709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+.banner .content{
+  max-width: 900px;
+  text-align: center;
+}
+.banner .content h2{
+  font-size: 5rem;
+  color: #111;
+}
+
+.banner .content p{
+  font-size: 1rem;
+  color: #111;
+  font-weight: bold;
+}
+.btn{
+  font-size: 1em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .5s;
+}
+
+.btn:hover{
+  letter-spacing: 6px;
+  color: #fff;
+}
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index:1;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  transition: .5s;
+
+}
+
+header.sticky{
+
+  background: #fff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+  color: #111;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+header .logo span{
+  color: #ff0157;
+}
+
+
+header.sticky .logo{
+  color: #111;
+}
+
+header .navigation{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li{
+  list-style: none;
+  margin-left:30px;
+  margin-top: 17px;
+}
+header .navigation li a{
+  text-decoration: none;
+  color: #111;
+  font-weight: 300;
+}
+header.sticky .navigation li a{
+  color: #111;
+}
+
+
+header .cart_counter,
+.cart_icon{
+    color: #111;
+}
+header.sticky .cart_counter
+,.cart_icon{
+    color: #111;
+}
+
+/* header.sticky .navigation li a:hover{
+  color: #ff0157;
+} */
+
+
+section{
+  padding: 100px;
+}
+
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col50{
+  position: relative;
+  width: 48%;
+}
+
+.titleText{
+  color: #111;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.titleText span{
+  color: #ff0157;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.row .col50 .imgBx{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+.row .col50 .imgBx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu .content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* .menu .content .box:hover{
+  background-color: red;
+  width: 300px;
+  height: 300px
+} */
+.menu .content .box{
+  width: 340px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+
+  transition: 1s;
+}
+
+.menu .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu .content .box .text{
+  padding: 15px 0 5px;
+  text-align: center;
+}
+
+.menu .content .box .text h3{
+  font-size: 20px;
+  font-weight: 400;
+  color: #111;
+}
+
+.btn_cart1{
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: .8em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 7px 15px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  transition: .5s;
+  margin: 5px 15px 0 5px;
+}
+.btn_cart{
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: .8em;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  padding: 7px 7px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  transition: .5s;
+  margin: 5px 15px 0 5px;
+}
+.btn_cart:hover{
+  text-decoration: none;
+  letter-spacing: 1.3px;
+  color: #fff;
+}
+
+.testimonial{
+  background: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+}
+.white .titleText,
+.white p{
+  color: #fff;
+}
+
+.testimonial .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.testimonial .content .box{
+  width: 340px;
+  margin: 20px;
+  padding: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonial .content .box .imgBx{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.testimonial .content .box .imgBx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial .content .box .text{
+  text-align: center;
+
+}
+
+.testimonial .content .box .text p{
+  color: #666;
+  font-style: italic;
+}
+.testimonial .content .box .text h3{
+  margin-top: 20px;
+  font-size: 1em;
+  color: #ff0157;
+  font-weight: 600;
+}
+
+.contact{
+  background: url("");
+  background-size: cover;
+}
+
+.contactForm{
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+.contactForm h3{
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox{
+  position: relative;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+  font-size: 1em;
+  color: #fff;
+  background:#ff0157;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.copyright{
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0,0,0,.1);
+  text-align: center;
+}
+.copyright p{
+  color: #ff0157;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+@media (max-width:991px){
+  header,
+  header.sticky
+  {
+    padding: 10px 20px;
+  }
+  header .navigation{
+    display: none;
+  }
+  header .navigation.active{
+    width: 100%;
+    height: calc(90% - 60px);
+    position: fixed;
+    top:68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#fff;
+  }
+
+  header .navigation li{
+    margin-left: 0;
+  }
+
+  header .navigation li a {
+      color: #111;
+      font-size: 1.6em;
+  }
+  .menuToggle{
+    position: relative;
+    width:40px;
+    height: 40px;
+    background: url("https://cdn4.vectorstock.com/i/1000x1000/05/73/menu-button-icon-design-vector-22050573.jpg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  .menuToggle.active{
+    background: url("https://www.freeiconspng.com/thumbs/close-button-png/black-circle-close-button-png-5.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header.sticky .menuToggle{
+    filter: invert(1);
+  }
+
+  section{
+    padding: 30px;
+  }
+  .banner .content h2{
+      font-size: 3em;
+      color: #111;
+  }
+  .row{
+    justify-content: column;
+   }
+   .row .col50{
+     position: relative;
+     margin-left:20px;
+     width: 100%;
+   }
+   .row .col50 .imgBx{
+     height: 300px;
+     margin-top: 20px;
+   }
+
+   .menu .content{
+     margin-top: 20px;
+   }
+   .menu .content .box{
+      margin: 10px;
+   }
+   .menu .content .box .imgBx{
+      height: 260px;
+    }
+
+    .Title{
+      text-align: center;
+    }
+    .titleText{
+      font-size: 1.8em;
+       line-height: 1.5em;
+       margin-bottom: 15px;
+       font-weight: 300;
+    }
+    .testimonial .content .box{
+      margin: 10px;
+      padding: 20px;
+    }
+    .contactForm{
+      padding: 35px 40px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    .banner .content h2{
+      font-size: 2.2em;
+      color: #fff;
+    }
+
+}
+
+/* image overlay text */
+
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+      background: lightgrey;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff0157;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    color: #111;
+    text-align: center;
+}
+.image__description1{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    color: #ff0157;
+    text-align: center;
+}
+
+
+
+
+/* login page */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: #ff0157;
+}
+
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.container{
+    margin-top: 25px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content{
+  margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img .image{
+	width: 500px;
+}
+
+form{
+	width: 360px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #ff0157;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #555;
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+.anchor{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #ff0157;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+.anchor:hover{
+	color: #ff0157;
+}
+
+.button{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #ff0157, #ff0157,#ff0157);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.button:hover{
+	background-position: right;
+}
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}
+}
+
+
+/* cart page */
+.product-header{
+  text-align:center;
+
+}
+table, .products{
+  text-align:center;
+  width: 100%;
+}
+th{
+  padding: 3vh;
+}
+.cols{
+  width:20%;
+  height: 10vh;
+}
+.image{
+  width: 30%;
+}
+.subcost1{
+  text-align: right;
+}
+
+.subcost2{
+  text-align: center;
+}
+
+
+.image_container1{
+  width: 12%;
+}
+
+
+/* adminForm */
+
+.container1{
+  width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-gap: 7rem;
+    padding: 0 2rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.button_update{
+  display: ;
+  width: 50%;
+  height: 40px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #ff0157, #ff0157,#ff0157);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: .5s;
+}

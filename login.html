@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Babies World</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <header >
+    <a href="#" class="logo">Kids<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu()">
+
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html" onclick="toggleMenu()" >Home </a></li>
+
+      <li><a href="login.html" onclick="toggleMenu()" >Login </a></li>
+      <li><a href="signup.html" onclick="toggleMenu()" >Sign Up </a></li>
+      <!-- <li><a href="cart.html" onclick="toggleMenu()" >Cart</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-cart-fill cart_icon" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg><span class="cart_counter">0</span>
+      </li> -->
+    </ul>
+  </header>
+
+	<!-- <img class="wave" src="img/wave.png"> -->
+<!-- <img class="wave" src="https://b-zr.com/wp-content/uploads/2016/07/pricing-pink-3-1.png"> -->
+	<div class="container">
+
+		<div class="img">
+			<img class="image"src=images/undraw_Mobile_feed_re_72ta.svg>
+		</div>
+		<div class="login-content" >
+			<form name="myform" action="#" onsubmit="return validate_my_Form()"method="post" autocomplete="off">
+				<img src="https://img.pngio.com/avatar-icon-of-flat-style-available-in-svg-png-eps-ai-icon-png-avatar-256_256.png">
+			     		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"style="color:#111"></i>
+           		   </div>
+           		   <div class="div">
+           		   			<input type="text" class="input" name="email"placeholder="username"required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock" style="color:#111"></i>
+           		   </div>
+           		   <div class="div">
+           		     	<input type="password" class="input" name="password"placeholder="password"required>
+            	   </div>
+            	</div>
+							<br>
+          	<input type="submit" class="button" value="Login">
+							<a  href="signup.html">New User?</a>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+      <!-- <script type="text/javascript" src="js/cart.js"></script> -->
+
+    <script type="text/javascript">
+      window.addEventListener('scroll',function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY>0);
+      })
+
+      function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation  = document.querySelector('.navigation');
+        navigation.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      }
+
+
+    </script>
+
+</body>
+</html>

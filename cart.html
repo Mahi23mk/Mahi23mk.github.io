@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <title>Babies World</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo">Kids<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu()">
+
+      </div>
+      <ul class="navigation">
+        <li><a href="index.html" onclick="toggleMenu()" >Home </a></li>
+        <li><a href="login.html" onclick="toggleMenu()" >Login </a></li>
+        <li><a href="signup.html" onclick="toggleMenu()" >Sign Up </a></li>
+        <li><a href="cart.html" onclick="toggleMenu()" >Cart</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-cart-fill cart_icon" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg><span class="cart_counter">0</span>
+      </li>
+      </ul>
+    </header>
+
+
+        <div class="product_container" style="margin-top:120px">
+            <table>
+            <tr>
+              <th></th>
+              <th class="product-title">PRODUCT</th>
+              <th class="price">TITLE</th>
+              <th class="price">PRICE</th>
+              <th class="quantity">QUANTITY</th>
+              <th class="">TOTAL</th>
+            </tr>
+
+            <table class="products">
+
+            </table>
+            
+            <div style="text-align: center">
+              <button class="btn"  onClick="clearCart()"> Clear Cart</button> 
+            </div>
+          </table>
+
+        </div>
+      
+        <script type="text/javascript" src="js/clearCart.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script type="text/javascript" src="js/cart.js"></script>
+        <script type="text/javascript" src="js/display.js"></script>
+        <script type="text/javascript">
+          window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+          })
+
+          function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation  = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+          }
+
+        </script>
+  </body>
+</html>
